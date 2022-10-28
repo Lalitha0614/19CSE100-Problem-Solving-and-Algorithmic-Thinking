@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lalit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:28:59 AM"/>
+        <attribute name="created" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEwLTI4OzA4OjQzOjQwIEFNOzIzMTA="/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEwLTI4OzEwOjI4OjU5IEFNOzQ7MjQyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Rollno" type="Integer" array="False" size=""/>
+            <declare name="Name" type="String" array="False" size=""/>
+            <declare name="Address" type="String" array="False" size=""/>
+            <declare name="Bloodgroup" type="String" array="False" size=""/>
+            <declare name="Phonenumber" type="Integer" array="False" size=""/>
+            <declare name="Departmentassigned" type="String" array="False" size=""/>
+            <output expression="&quot;Enter Rollno&quot;" newline="True"/>
+            <input variable="Rollno"/>
+            <output expression="&quot;Enter Name&quot;" newline="True"/>
+            <input variable="Name"/>
+            <output expression="&quot;Enter address&quot;" newline="True"/>
+            <input variable="Address"/>
+            <output expression="&quot;Enter blood group&quot;" newline="True"/>
+            <input variable="Bloodgroup"/>
+            <output expression="&quot;Enter phone number&quot;" newline="True"/>
+            <input variable="Phonenumber"/>
+            <output expression="&quot;Enter department assigned&quot;" newline="True"/>
+            <input variable="Departmentassigned"/>
+            <comment text="&quot;Your basic details has been saved&quot;"/>
+            <output expression="&quot; Roll number=&quot; &amp; Rollno &amp;&#13;&#10;&quot; Name=&quot; &amp; Name &amp;&#13;&#10;&quot; Address=&quot; &amp; Address &amp;&#13;&#10;&quot; Bloodgroup=&quot; &amp; Bloodgroup &amp;&#13;&#10;&quot; Phone number=&quot; &amp; Phonenumber &amp;&#13;&#10;&quot; DEpartment assigned=&quot; &amp; Departmentassigned" newline="True"/>
+            <comment text="Now lets get your academic details!"/>
+            <declare name="Semister" type="Integer" array="False" size=""/>
+            <declare name="NoOfSubjects" type="Integer" array="False" size=""/>
+            <assign variable="NoOfSubjects" expression="5"/>
+            <output expression="&quot;No Of Subjects=&quot;&amp; NoOfSubjects" newline="True"/>
+            <comment text="enter your marks details"/>
+            <declare name="Subjectcode1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Subjectcode1&quot;" newline="True"/>
+            <input variable="Subjectcode1"/>
+            <declare name="Marks1" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter marks of&quot;&amp; Subjectcode1" newline="True"/>
+            <input variable="Marks1"/>
+            <declare name="Subjectcode2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Subjectcode2&quot;" newline="True"/>
+            <input variable="Subjectcode2"/>
+            <declare name="Marks2" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter marks of&quot;&amp; Subjectcode2" newline="True"/>
+            <input variable="Marks2"/>
+            <declare name="Subjectcode3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Subjectcode3&quot;" newline="True"/>
+            <input variable="Subjectcode3"/>
+            <declare name="Marks3" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter marks of&quot;&amp; Subjectcode3" newline="True"/>
+            <input variable="Marks3"/>
+            <declare name="Subjectcode4" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Subjectcode4&quot;" newline="True"/>
+            <input variable="Subjectcode4"/>
+            <declare name="Marks4" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter marks of&quot;&amp; Subjectcode4" newline="True"/>
+            <input variable="Marks4"/>
+            <declare name="Subjectcode5" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Subjectcode5&quot;" newline="True"/>
+            <input variable="Subjectcode5"/>
+            <declare name="Marks5" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter marks of&quot;&amp; Subjectcode5" newline="True"/>
+            <input variable="Marks5"/>
+            <comment text="Your marks has been recorded"/>
+            <declare name="Totalmarks" type="Real" array="False" size=""/>
+            <assign variable="Totalmarks" expression="Marks1+Marks2+Marks3+Marks4+Marks5"/>
+            <comment text="this is your total marks out of 500"/>
+            <output expression="&quot;Total marks=&quot; &amp; Totalmarks" newline="True"/>
+            <declare name="AverageMarks" type="Real" array="False" size=""/>
+            <assign variable="AverageMarks" expression="TotalMarks/NoOfSubjects"/>
+            <comment text="this is your average marks"/>
+            <output expression="&quot;Average Marks=&quot; &amp; AverageMarks" newline="True"/>
+            <comment text="Thank you for your time!&#13;&#10;your details are in safe hands :)"/>
+        </body>
+    </function>
+</flowgorithm>
