@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22037"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 09:51:45 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAzNzsyMDIyMjNNQVlDMDA3NDsyMDIyLTExLTA0OzA5OjI4OjE5IEFNOzMzMjg="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAzNzsyMDIyMjNNQVlDMDA3NDsyMDIyLTExLTA0OzA5OjUxOjQ1IEFNOzI7MzQzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="a is the coeficient of x^2"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <comment text="b is the coeficient of x"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <comment text="c is the constant value"/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <comment text="Root1 and Root2 are the roots of the Quadratic equation"/>
+            <declare name="Root1" type="Integer" array="False" size=""/>
+            <declare name="Root2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the coefficient of x^2&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the coefficient of x&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter the constant value&quot;" newline="True"/>
+            <input variable="c"/>
+            <comment text="Root1 is"/>
+            <assign variable="Root1" expression="((-b)+((b^2)-4*a*c)^0.5)/(2*a)"/>
+            <comment text="Root2 is"/>
+            <assign variable="Root2" expression="((-b)-((b^2)-4*a*c)^0.5)/(2*a)"/>
+            <output expression="&quot;One of the root of the given Quadratic Equation is&quot; &amp; Root1" newline="True"/>
+            <output expression="&quot;Other root of the given Quadratic Equation is&quot; &amp; Root2" newline="True"/>
+            <output expression="&quot;Thank you&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

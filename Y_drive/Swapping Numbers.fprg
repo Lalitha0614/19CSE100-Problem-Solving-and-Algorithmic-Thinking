@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22037"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:02:36 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAzNzsyMDIyMjNNQVlDMDA3NDsyMDIyLTExLTA0OzA5OjUxOjQ2IEFNOzMzMjQ="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAzNzsyMDIyMjNNQVlDMDA3NDsyMDIyLTExLTA0OzExOjAyOjM2IEFNOzQ7MzQyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value of 1st number-a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the value of 2nd number-b&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="we swap the numbers using some operations"/>
+            <assign variable="a" expression="a+b"/>
+            <assign variable="b" expression="a-b"/>
+            <assign variable="a" expression="a-b"/>
+            <comment text="now the numbers are swapped"/>
+            <output expression="&quot;The new a is&quot;&amp; a" newline="True"/>
+            <output expression="&quot;the new b is&quot;&amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
