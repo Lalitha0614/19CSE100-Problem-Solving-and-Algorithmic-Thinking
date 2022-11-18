@@ -1,0 +1,149 @@
+Declare Integer AccNumber 
+
+    Assign AccNumber = 123456 
+
+    Declare Integer Pin 
+
+    Assign Pin = 1234 
+
+    Declare String Name 
+
+    Declare Integer Pin1 
+
+    Declare Integer Balance 
+
+    Assign Balance = 5000 
+
+    Declare Integer Amount 
+
+    Declare Integer Choice 
+
+    Print "Please Enter your Account Number" 
+
+    Input AccNumber 
+
+    Print "Please enter your Name" 
+
+    Input Name 
+
+    Print "Please enter your Pin" 
+
+    Read Value Pin1 
+
+    If Pin==Pin1 
+
+        Print "Please choose the operation u want to perform" 
+
+        Print "1.Deposit" 
+
+        Print "2.Withdraw" 
+
+        Print "3.Check Balance" 
+
+        Print "4.Pin Change" 
+
+        Input Choice 
+
+        If Choice==1 
+
+            Print "Please Enter the amount you want to deposit" 
+
+            Read Value Amount 
+
+            Assign Balance = Balance+Amount 
+
+            Print "The Amount has Successfully been added to your Account" 
+
+            Print Balance 
+
+            Print "Thank you for Choosing our Bank" 
+
+        Else 
+
+             If Choice==2 
+
+                 Output "Please Enter the amount you want to Withdraw" 
+
+                  Read Value Amount 
+
+                  If Amount>=Balance 
+
+                      Print "Insufficient balance" 
+
+                      Print "Transaction Cancelled" 
+
+                      Print "Thank you for Banking with us" 
+
+                  Else 
+
+                      Print "Please collect your Cash" 
+
+                      Print "Your Current Balance is" 
+
+                      Assign Balance = Balance-Amount 
+
+                      Print Balance 
+
+                      Print "Thank you for Choosing our Bank" 
+
+             Else 
+
+                  If Choice==3 
+
+                      Print "Your Current Balance is" & Balance 
+
+                  Else 
+
+                       If Choice==4 
+
+                       Print "Please enter your Pin" 
+
+                       Read Value Pin 
+
+                       If Pin==Pin1 
+
+                             Print "Enter Your New Pin" 
+
+                             Read Value Pin 
+
+                             Declare Integer Pin2 
+
+                	Print "Re-enter your new Pin" 
+
+                             Read Value Pin2 
+
+                             If Pin==Pin2 
+
+                                  Print "Your Pin has Successfully been Changed" 
+
+                                  Print "Thank you for Banking with us" 
+
+                             Else 
+
+                                   Print "Please re check your Pin" 
+
+                                   Print "Request Declined" 
+
+                                   Print "Thank you for Banking with us" 
+
+                      Else 
+
+                             Print "Incorrect Pin Entered, Plese Re check you Pin and try again" 
+
+                             Print  "Request Declined" 
+
+                             Print "Thank you for Banking with us" 
+
+         Else 
+
+              Print "Please enter a valid Choice" 
+
+              Print "Thank you for Banking with us" 
+
+     Else 
+
+            Print "Incorrect Pin entered, Please re check your Pin and try again" 
+
+            Print "Thank you for Banking with us" 
+
+ 
