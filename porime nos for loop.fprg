@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22037"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 11:01:15 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAzNzsyMDIyMjNNQVlDMDA3NDsyMDIyLTEyLTAyOzEwOjU5OjIzIEFNOzMzMTg="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAzNzsyMDIyMjNNQVlDMDA3NDsyMDIyLTEyLTAyOzExOjAxOjE1IEFNOzE7MzQxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="prime numbers less than or equal to n"/>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="2">
+                <output expression="&quot;Prime numbers below n are&quot;" newline="True"/>
+                <output expression="i" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
