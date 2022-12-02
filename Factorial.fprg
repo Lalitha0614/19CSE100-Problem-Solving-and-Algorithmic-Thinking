@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22037"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:14:03 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAzNzsyMDIyMjNNQVlDMDA3NDsyMDIyLTEyLTAyOzA5OjEwOjE1IEFNOzMzMTQ="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAzNzsyMDIyMjNNQVlDMDA3NDsyMDIyLTEyLTAyOzA5OjE0OjAzIEFNOzE7MzQyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Factorial=1*2*...*n"/>
+            <declare name="i, n, Factorial" type="Integer" array="False" size=""/>
+            <assign variable="Factorial" expression="1"/>
+            <output expression="&quot;What Factorial do you want?&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="Factorial" expression="Factorial*i"/>
+            </for>
+            <output expression="&quot;Facotial of &quot;&amp; n &amp; &quot; is &quot;&amp; Factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
