@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lalit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-03 08:43:26 AM"/>
+        <attribute name="created" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTAzOzA4OjM5OjA5IEFNOzIzMTU="/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTAzOzA4OjQwOjE2IEFNOzI7bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTAzOzA3OjI5OjQ2IEFNO2ZpYmJvbm9jY2kgc2VyaWVzLmZwcmc7NzA0NA=="/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTAzOzA4OjQzOjI2IEFNOzM7MjQxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, n1, n2, n3" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="n1" expression="0"/>
+            <assign variable="n2" expression="1"/>
+            <output expression="n1" newline="True"/>
+            <output expression="n2" newline="True"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=n-2">
+                <assign variable="n3" expression="n1+n2"/>
+                <output expression="n3" newline="True"/>
+                <assign variable="n1" expression="n2"/>
+                <assign variable="n2" expression="n3"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

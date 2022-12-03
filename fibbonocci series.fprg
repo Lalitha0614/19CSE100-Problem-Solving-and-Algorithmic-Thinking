@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lalit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-03 08:34:00 AM"/>
+        <attribute name="created" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTAzOzA3OjI5OjQ2IEFNOzIzMTQ="/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTAzOzA4OjM0OjAwIEFNOzE7MjQwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, n1, n2, n3" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="n1" expression="0"/>
+            <assign variable="n2" expression="1"/>
+            <output expression="n1" newline="True"/>
+            <output expression="n2" newline="True"/>
+            <for variable="i" start="1" end="n-2" direction="inc" step="1">
+                <assign variable="n3" expression="n1+n2"/>
+                <output expression="n3" newline="True"/>
+                <assign variable="n1" expression="n2"/>
+                <assign variable="n2" expression="n3"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
