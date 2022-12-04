@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lalit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-04 07:03:01 PM"/>
+        <attribute name="created" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA0OzA1OjM3OjU1IFBNOzIzMjc="/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA0OzA3OjAzOjAxIFBNOzE7MjQyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="To display the list of all prime numbers below a number"/>
+            <declare name="a, n, i" type="Integer" array="False" size=""/>
+            <declare name="Primeno" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Enter the range of numbers&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="2" end="n" direction="inc" step="1">
+                <assign variable="Primeno" expression="True"/>
+                <for variable="a" start="2" end="i-1" direction="inc" step="1">
+                    <if expression="i%a!=0">
+                        <then/>
+                        <else>
+                            <assign variable="Primeno" expression="False"/>
+                        </else>
+                    </if>
+                </for>
+                <if expression="Primeno==True">
+                    <then>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
