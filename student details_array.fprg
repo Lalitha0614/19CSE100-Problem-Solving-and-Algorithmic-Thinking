@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lalit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 06:47:35 PM"/>
+        <attribute name="created" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzA5OjI5OjE4IEFNOzIzMjE="/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzA2OjQ3OjM1IFBNOzY7MjQ0NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, a, q" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="totalmarks" type="Integer" array="True" size="n"/>
+            <declare name="avgmarks" type="Integer" array="True" size="n"/>
+            <declare name="Rollno" type="Integer" array="True" size="n"/>
+            <declare name="Marks" type="Integer" array="True" size="5"/>
+            <declare name="mark, total, avg" type="Real" array="False" size=""/>
+            <assign variable="total" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter rollno of student&quot; &amp; i" newline="True"/>
+                <input variable="Rollno[i]"/>
+                <output expression="&quot;Enter marks of 5 subjects&quot;" newline="True"/>
+                <for variable="a" start="0" end="4" direction="inc" step="1">
+                    <input variable="mark"/>
+                    <assign variable="Marks[a]" expression="mark"/>
+                    <assign variable="total" expression="total+Marks[a]"/>
+                </for>
+                <assign variable="avg" expression="total/5"/>
+                <assign variable="totalmarks[i]" expression="total"/>
+                <assign variable="avgmarks[i]" expression="avg"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;ROLL NO:&quot; &amp; Rollno[i]" newline="True"/>
+                <output expression="&quot;Total Marks:&quot; &amp; totalmarks[i]" newline="True"/>
+                <output expression="&quot;Average Marks&quot; &amp; avgmarks[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

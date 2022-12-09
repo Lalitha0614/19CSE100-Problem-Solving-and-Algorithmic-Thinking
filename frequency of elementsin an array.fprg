@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lalit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 09:10:25 PM"/>
+        <attribute name="created" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzEwOjU1OjExIEFNOzIzMDU="/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzEwOjU3OjE3IEFNOzI7bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzEwOjUwOjA4IEFNO2xhcmdlc3QgZWxlbWVudCBpbiBhcnJheS5mcHJnOzc2Nzc="/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzA5OjEwOjI1IFBNOzI7MjQzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, a, count, q" type="Integer" array="False" size=""/>
+            <declare name="array" type="Integer" array="True" size="5"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="count" expression="0"/>
+            <declare name="t" type="String" array="False" size=""/>
+            <assign variable="t" expression="&quot;not visited&quot;"/>
+            <output expression="&quot;Enter the array elements&quot;" newline="True"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <input variable="array[i]"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="a" expression="array[i]"/>
+                <for variable="q" start="0" end="4" direction="inc" step="1">
+                    <if expression="array[q]=a">
+                        <then>
+                            <assign variable="count" expression="count+1"/>
+                            <assign variable="t" expression="&quot;visited&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="t" expression="&quot;not visited&quot;"/>
+                        </else>
+                    </if>
+                </for>
+                <output expression="a &amp; &quot;-&quot; &amp; count" newline="True"/>
+                <assign variable="count" expression="0"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

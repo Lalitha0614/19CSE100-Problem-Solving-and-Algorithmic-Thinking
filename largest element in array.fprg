@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lalit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 08:54:37 PM"/>
+        <attribute name="created" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzEwOjUwOjA4IEFNOzIzMDY="/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzEwOjUwOjExIEFNOzE7bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzA5OjA4OjI4IEFNO2xpbmVhciBzZWFyY2guZnByZzs2NjE5"/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzA4OjU0OjM3IFBNOzI7MjQ0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, max" type="Integer" array="False" size=""/>
+            <declare name="array" type="Integer" array="True" size="5"/>
+            <assign variable="i" expression="0"/>
+            <comment text="Getting input for the array elements"/>
+            <output expression="&quot;Enter the array elements&quot;" newline="True"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <input variable="array[i]"/>
+            </for>
+            <comment text="To find the largest element in the array"/>
+            <assign variable="max" expression="array[0]"/>
+            <for variable="i" start="1" end="4" direction="inc" step="1">
+                <if expression="array[i]&gt;max">
+                    <then>
+                        <assign variable="max" expression="array[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;The largest element in the array is&quot;" newline="True"/>
+            <output expression="max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

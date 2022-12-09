@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lalit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 08:53:26 PM"/>
+        <attribute name="created" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzA5OjE0OjI2IEFNOzIzMTQ="/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzA5OjE0OjI5IEFNOzE7bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzA5OjA4OjI4IEFNO2xpbmVhciBzZWFyY2guZnByZzs2NjM2"/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA5OzA4OjUzOjI2IFBNOzg7MjQ0Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <comment text="Declaring array of size 10"/>
+            <declare name="a" type="Integer" array="True" size="10"/>
+            <assign variable="i" expression="0"/>
+            <comment text="Getting input values for array"/>
+            <output expression="&quot;Enter the array elements&quot;" newline="True"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <comment text="Displaying the array contents"/>
+            <output expression="&quot;The array is&quot;" newline="True"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;a&quot; &amp; &quot;[&quot; &amp; i &amp; &quot;]&quot; &amp; &quot;=&quot; &amp; a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
